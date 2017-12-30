@@ -1,0 +1,1 @@
+this->billAmount * this->billAmount
