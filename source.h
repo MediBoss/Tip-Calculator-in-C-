@@ -15,7 +15,7 @@ class tipCalc{
       double getTipAmount() const;//returns the money to be given to the waiter as a tip
       double getTotalAmount() const; //returns the total money to be paid including the tip
       double getBillAmount() const;//simply returns the bill given by the waiter
-      std::string printBill() const; // prints the entire bill to the customer
+      void printBill() const; // prints the entire bill to the customer
 
           //CONSTRUCTOR
 
