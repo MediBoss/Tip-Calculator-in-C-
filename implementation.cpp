@@ -17,7 +17,7 @@ int tipCalc:: getTipPercent()const{
 //Postcondition : The tip amount is returned
 double tipCalc:: getTipAmount()const{
 
-  return (this->billAmount * this->billAmount)/100;
+  return (this->billAmount * this->tipPercent)/100;
 }
 //function to return the bill amount given by the waiter
 //Postcondition : The bill amount is returned
@@ -34,9 +34,7 @@ double tipCalc:: getTotalAmount()const{
 //this function prints the final bill to the customer
 //Postcondition : All the informations necessary to paid the waiter are printed to the user
 void tipCalc:: printBill() const{
-
-  std::cout<<"\n\n\t\t\tTIP CALCULATOR\n\n"<<"Bill Amount :\t\t\t"<<this->getBillAmount()<<std::endl;
-  std::cout<<"\nTip Percent :\t\t\t"<<this->getTipPercent()<<"\n\nTip Amount :\t\t\t"<<this->getTipAmount()<<std::endl;
-  std::cout<<"\nTotal Amount :\t\t\t"<<this->getTotalAmount()<<"\n\nThank You !\n"<<std::endl;
+  std::cout<<"\n\n\t\t\tTIP CALCULATOR\n\n"<<"Bill Amount :\t\t\t$"<<this->getBillAmount()<<std::endl;
+  std::cout<<"\nTip Percent :\t\t\t"<<this->getTipPercent()<<"%"<<"\n\nTip Amount :\t\t\t$"<<this->getTipAmount()<<std::endl;
+  std::cout<<"\nTotal Amount :\t\t\t$"<<this->getTotalAmount()<<"\n\nThank You !\n"<<std::endl;
 }
-
